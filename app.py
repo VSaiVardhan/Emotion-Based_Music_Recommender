@@ -18,7 +18,11 @@ st.markdown("Describe your mood and get the perfect song recommendations based o
 st.markdown("Your current emotion is detected from what you type and then songs are recommended based on detected emotion.")
 
 # Preprocess function
-stop_words = set(stopwords.words("english"))
+try:
+    stop_words = set(stopwords.words("english"))
+except LookupError:
+    nltk.download("stopwords")
+    stop_words = set(stopwords.words("english"))
 
 def preprocess(text):
     text = text.lower()
