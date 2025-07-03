@@ -1,0 +1,51 @@
+emotion_cluster,song_title,artist,genre
+happy,Happy,Pharrell Williams,pop
+happy,Don't Stop Me Now,Queen,rock
+happy,Walking on Sunshine,Katrina and The Waves,rock-pop
+happy,Uptown Funk,Mark Ronson,pop
+happy,Good as Hell,Lizzo,hip hop-pop
+happy,Lovely Day,Bill Withers,soul
+happy,Three Little Birds,Bob Marley and The Wailers,reggae
+happy,Shake It Off,Taylor Swift,pop
+happy,Mr. Blue Sky,Electric Light Orchestra,rock-pop
+happy,Can't Stop the Feeling!,Justin Timberlake,pop
+sad,Fix You,Coldplay,rock
+sad,The Middle,Jimmy Eat World,pop
+sad,Here Comes The Sun,The Beatles,pop-rock
+sad,Dog Days Are Over,Florence,pop
+sad,"Don't Worry, Be Happy",Bobby McFerrin,reggae
+sad,Float On,Modest Mouse,rock
+sad,Shake It Out,Florence,pop
+sad,Somewhere Over The Rainbow,Israel Kamakawiwo?ole,hawaiian
+sad,Lovely Day,Bill Withers,soul
+sad,Let It Be,The Beatles,rock
+angry,Killing in the Name,Rage Against the Machine,rap
+angry,Break Stuff,Limp Bizkit,nu-metal
+angry,Welcome to the Jungle,Guns N' Roses,hard-rock
+angry,You Oughta Know,Alanis Morissette,rock
+angry,One Step Closer,Linkin Park,rock
+angry,Weight of Love,The Black Keys,rock
+angry,Breathe,Pink Floyd,rock
+angry,Let It Go,James Bay,soul
+angry,Holocene,Bon Iver,pop
+angry,The Sound of Silence,Disturbed,rock
+anxious,Mad World,Tears for Fears,synth-pop
+anxious,Creep,Radiohead,rock
+anxious,Hurt,Inch Nails,rock
+anxious,The Sound of Silence,Simon and Garfunkel,rock
+anxious,Numb,Linkin Park,nu-metal
+anxious,Everybody Wants To Rule The World,Tears for Fears,synth-pop
+anxious,Where Is My Mind?,Pixies,rock
+anxious,Bad Guy,Billie Eilish,pop
+anxious,Come Little Children,Sarah Jessica Parker,ethereal
+anxious,Whispers in the Dark,Skillet,metal
+calm,Northern Sky,Nick Drake,folk
+calm,What a Wonderful World,Louis Armstrong,jazz
+calm,Here Comes the Sun,The Beatles,rock-pop
+calm,Imagine,John Lennon,pop
+calm,Fix You,Coldplay,rock
+calm,River Flows in You,Yiruma,piano
+calm,Liability,Lorde,pop
+calm,Perfect Day,Lou Reed,rock
+calm,Harvest Moon,Neil Young,rock
+calm,Somewhere Over the Rainbow,Israel Kamakawiwo?ole,pop
