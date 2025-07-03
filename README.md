@@ -20,6 +20,7 @@ This is a machine learning-based system that recommends songs based on the user'
 
 ## Project Structure
 
+```text
 Emotion-Based Music Recommender/
 │
 ├── cluster_emotions.ipynb         # Clusters similar emotions
@@ -31,6 +32,7 @@ Emotion-Based Music Recommender/
 ├── original_datasets/             # Raw emotion and GoEmotions datasets
 ├── models/                        # (Optional) Saved models
 └── README.md
+```
 
 ## Datasets
 
