@@ -7,6 +7,15 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.data import find
 
+# Force-download necessary NLTK resources
+for resource in ["punkt", "stopwords"]:
+    try:
+        find(f"tokenizers/{resource}") if resource == "punkt" else stopwords.words("english")
+    except LookupError:
+        nltk.download(resource, quiet=True)
+
+stop_words = set(stopwords.words("english"))
+
 # Load assets
 model = joblib.load("emotion_predictor.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
@@ -20,21 +29,12 @@ st.markdown("Describe your mood and get the perfect song recommendations based o
 st.markdown("Your current emotion is detected from what you type and then songs are recommended based on detected emotion.")
 
 # Preprocess function
-nltk.download("stopwords", quiet=True)
-nltk.download("punkt", quiet=True)
-
-stop_words = set(stopwords.words("english"))
-
 def preprocess(text):
     text = text.lower()
-    try:
-        find("tokenizers/punkt")
-    except LookupError:
-        nltk.download("punkt", quiet=True)
-
-    tokens = word_tokenize(text, language="english")  # specify language
+    tokens = word_tokenize(text, language="english")
     tokens = [t for t in tokens if t not in stop_words and t not in string.punctuation]
     return ' '.join(tokens)
+
 
 # Song recommendation based on predicted emotion
 def get_songs_by_emotion(emotion, language):
