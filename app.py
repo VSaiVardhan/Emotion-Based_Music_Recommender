@@ -5,6 +5,7 @@ import string
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from nltk.data import find
 
 # Load assets
 model = joblib.load("emotion_predictor.pkl")
@@ -26,6 +27,10 @@ stop_words = set(stopwords.words("english"))
 
 def preprocess(text):
     text = text.lower()
+    try:
+        find("tokenizers/punkt")
+    except LookupError:
+        nltk.download("punkt", quiet=True)
     tokens = word_tokenize(text)
     tokens = [t for t in tokens if t not in stop_words and t not in string.punctuation]
     return ' '.join(tokens)
