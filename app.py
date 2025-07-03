@@ -31,7 +31,8 @@ def preprocess(text):
         find("tokenizers/punkt")
     except LookupError:
         nltk.download("punkt", quiet=True)
-    tokens = word_tokenize(text)
+
+    tokens = word_tokenize(text, language="english")  # specify language
     tokens = [t for t in tokens if t not in stop_words and t not in string.punctuation]
     return ' '.join(tokens)
 
