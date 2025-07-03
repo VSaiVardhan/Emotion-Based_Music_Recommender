@@ -20,6 +20,8 @@ st.markdown("Your current emotion is detected from what you type and then songs 
 
 # Preprocess function
 nltk.download("stopwords", quiet=True)
+nltk.download("punkt", quiet=True)
+
 stop_words = set(stopwords.words("english"))
 
 def preprocess(text):
