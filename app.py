@@ -8,9 +8,14 @@ from nltk.tokenize import word_tokenize
 from nltk.data import find
 
 # Force-download necessary NLTK resources
-for resource in ["punkt", "stopwords"]:
+for resource in ["punkt", "stopwords", "punkt_tab"]:
     try:
-        find(f"tokenizers/{resource}") if resource == "punkt" else stopwords.words("english")
+        if resource == "punkt":
+            find(f"tokenizers/{resource}")
+        elif resource == "stopwords":
+            stopwords.words("english")
+        elif resource == "punkt_tab":
+            find(f"tokenizers/{resource}/english/")
     except LookupError:
         nltk.download(resource, quiet=True)
 
@@ -34,7 +39,6 @@ def preprocess(text):
     tokens = word_tokenize(text, language="english")
     tokens = [t for t in tokens if t not in stop_words and t not in string.punctuation]
     return ' '.join(tokens)
-
 
 # Song recommendation based on predicted emotion
 def get_songs_by_emotion(emotion, language):
@@ -70,4 +74,3 @@ st.markdown(
     "Built by [VSaiVardhan](https://github.com/VSaiVardhan)",
     unsafe_allow_html=True
 )
-
