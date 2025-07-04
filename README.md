@@ -27,6 +27,7 @@ Emotion-Based Music Recommender/
 ├── predict_emotions.ipynb         # Trains emotion classifier
 ├── recommend_music.ipynb          # Recommends songs based on emotion
 ├── app.py                         # Streamlit app
+├── requirements.txt               # Packages and libraries used
 ├── songs_dataset_en.csv           # English songs dataset
 ├── songs_dataset_te.csv           # Telugu songs dataset
 ├── original_datasets/             # Raw emotion and GoEmotions datasets
@@ -39,6 +40,8 @@ Emotion-Based Music Recommender/
 - `songs_dataset_en.csv` - English songs labeled by emotion
 - `songs_dataset_te.csv` - Telugu songs labeled by emotion
 - `goemotions_*.csv` - Used for training emotion classifier
+- The GoEmotions dataset used in this project is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- GoEmotions dataset Original source: [https://github.com/google-research/google-research/tree/master/goemotions](https://github.com/google-research/google-research/tree/master/goemotions).
 
 ## Author
 
