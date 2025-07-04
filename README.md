@@ -1,6 +1,8 @@
 # Emotion-Based Music Recommender
 
 This is a machine learning-based system that recommends songs based on the user's emotional input in text form. It supports both **English** and **Telugu** songs and offers an interactive frontend using **Streamlit**.
+🔗 [Click here to try the live app](https://emotion-based-music-recommender-by-vsaivardhan.streamlit.app/)
+
 
 ## Features
 
